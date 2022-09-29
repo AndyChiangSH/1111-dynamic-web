@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>國立中興大學資訊工程學系</title>
+    <style>
+        .nav {
+            background-color: #38444d;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .nav ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          
+        }
+        
+        .nav li {
+          float: left;
+        }
+        
+        .nav li a, .dropbtn {
+          display: inline-block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        .nav li a:hover, .nav .dropdown:hover .dropbtn {
+          background-color: #009999;
+        }
+        
+        .nav li.dropdown {
+          display: inline-block;
+        }
+        
+        .nav .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .nav .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+        
+        .nav .dropdown-content a:hover {
+            background-color: #ccffff;
+        }
+        
+        .nav .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div style="text-align: center;">
+            <a href="/ch/">
+                <img src="/img/logo.png" alt="logo" style="width: 50%;">
+            </a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="/ch/news.html">系所公告</a></li>
+                <li><a href="/ch/intro.html">系所介紹</a></li>
+                <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">課程資訊</a>
+                  <div class="dropdown-content">
+                    <a href="/ch/course/bachelor.html">學士班</a>
+                    <a href="/ch/course/master.html">碩士班</a>
+                    <a href="/ch/course/phd.html">博士班</a>
+                  </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">系所成員</a>
+                    <div class="dropdown-content">
+                    <a href="/ch/member/fulltime.html">專任師資</a>
+                    <a href="/ch/member/parttime.html">兼任師資</a>
+                    <a href="/ch/member/retire.html">退休師資</a>
+                    <a href="/ch/member/staff.html">行政人員</a>
+                    </div>
+                </li>
+                <li><a href="/ch/lab.html">實驗室</a></li>
+            </ul>
+            <ul>
+                <li><a href="/en/">English</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content" style="width: 80%; margin: 20px auto;">
+        <h1 style="text-align: center;">系所公告</h1>
+        <div class="news-list">
+            <div class="news" style="border: 1px solid #b9b9b9; padding: 10px; margin: 10px 0px;">
+                <span style="color: rgb(0, 179, 0); font-weight: bold;">2022-09-21 18:39:48</span>
+                <p>111年9月26日(一)UC Davis 3+X 碩士學位項目說明會</p>
+                <a href="" style="color: #3268df;">更多資訊...</a>
+            </div>
+            <div class="news" style="border: 1px solid #b9b9b9; padding: 10px; margin: 10px 0px;">
+                <span style="color: rgb(0, 179, 0); font-weight: bold;">2022-09-05 17:07:29</span>
+                <p>111學年度碩士班第32梯次遞補公告(甲組遞補)</p>
+                <a href="" style="color: #3268df;">更多資訊...</a>
+            </div>
+            <div class="news" style="border: 1px solid #b9b9b9; padding: 10px; margin: 10px 0px;">
+                <span style="color: rgb(0, 179, 0); font-weight: bold;">2022-09-02 16:15:09</span>
+                <p>111學年度碩士班第31梯次遞補公告(甲組遞補)</p>
+                <a href="" style="color: #3268df;">更多資訊...</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer" style="padding: 20px 0; background-color: #38444d; color: rgb(255, 255, 255);">
+        <ul>
+            <li>國立中興大學資訊工程學系</li>
+            <li>402 台中市南區興大路 145 號 - 理學大樓 8 樓</li>
+            <li>TEL: (04)22840497, (04)22840498 | FAX: (04)22853869</li>
+            <li>MAIL: ce@dragon.nchu.edu.tw</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!-- 
+4108056005 江尚軒 第一次作業 9/29
+4108056005 Shang-Hsuan Chiang The First Homework 9/29
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>NCHU CSE | Contact</title>
+ </head>
+ <body>
+     <div class="header" id="top">
+        <div style="text-align: center;">
+            <a href="./index.html">
+                <img src="../img/logo.png" alt="logo" style="width: 50%;">
+            </a>
+        </div>
+     </div>
+     <div class="container" style="width: 80%; margin: 20px auto; display: flex;">
+        <nav class="sidebar" style="width: 20%; background-color: #dddddd; margin: 0px 10px;">
+            <ul>
+                <li><a href="./news.html">News</a></li>
+                <li><a href="./intro.html">Introduction</a></li>
+                <li>Course
+                    <ul>
+                        <li><a href="./course/bachelor.html">Bachelor</a></li>
+                        <li><a href="./course/master.html">Master</a></li>
+                        <li><a href="./course/phd.html">PhD</a></li>
+                    </ul>
+                </li>
+                <li>Member
+                    <ul>
+                        <li><a href="./member/faculty.html">Current teachers</a></li>
+                        <li><a href="./member/retire.html">Retired teachers</a></li>
+                        <li><a href="./member/staff.html">Staff</a></li>
+                    </ul>
+                </li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./sitemap.html">Sitemap</a></li>
+                <li><a href="../ch/contact.html">中文</a></li>
+            </ul>
+        </nav>
+         <div class="content" style="width: 80%; margin: 0px 10px;">
+            <h1 style="text-align: center;">Contact</h1>
+            <hr>
+            <p>Please fill out the form below and send it, thank you!</p>
+            <form action="" method="GET">
+                <p><label for="name">Name：</label><input id="name" type="text" size="20" max="10"></p>
+                <p><label for="gender">Gender：</label><input type="radio" id="male" name="gender" value="male"><label for="male">Male</label><input type="radio" id="female" name="gender" value="female"><label for="female">Female</label><br></p>
+                <p><label for="age">Age：</label><input type="number" name="age" id="age" max="100" min="1"></p>
+                <p><label for="birthday">Birthday：</label><input type="date" name="birthday" id="birthday"></p>
+                <p><label for="phone">Phone：</label><input type="tel" name="phone" id="phone"></p>
+                <p><label for="email">Email：</label><input type="email" name="email" id="email"></p>
+                <p>
+                    <label for="location">City of residence：</label>
+                    <input type="text" id="location" placeholder="Please enter city name" list="citys">
+                    <datalist id="citys">
+                        <option value="Taipei">
+                        <option value="Taichung">
+                        <option value="Tainan">
+                        <option value="Taitung">
+                    </datalist>
+                </p>
+                <p>
+                    <label for="degree">Education：</label>
+                    <select name="degree" id="cars">
+                        <option value="1">Bachelor</option>
+                        <option value="2">Master</option>
+                        <option value="3">PhD</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="interest">Interests (multiple choice)：</label>
+                    <input type="checkbox" name="interest" id="1"><label for="1">write programs</label>
+                    <input type="checkbox" name="interest" id="2"><label for="2">play games</label>
+                    <input type="checkbox" name="interest" id="3"><label for="3">sports</label>
+                    <input type="checkbox" name="interest" id="4"><label for="4">eat</label>
+                    <input type="checkbox" name="interest" id="5"><label for="5">read</label>
+                </p>
+                <p>
+                    <label for="content">Remark：</label><br>
+                    <textarea name="content" id="content" cols="30" rows="10" placeholder="Write something!"></textarea>
+                </p>
+                <p><input type="reset" value="Clean" style="margin-right: 10px;"><input type="submit" value="Submit"></p>
+            </form>
+            <!-- TODO -->
+        </div>
+     </div>
+     <footer style="padding: 20px 0; background-color: #38444d; color: rgb(255, 255, 255);">
+         <ul>
+             <li>Department of Information Engineering, National Chung Hsing University</li>
+             <li>No. 145, Xingda Road, South District, Taichung City 402 - 8th Floor, Science Building</li>
+             <li>TEL: (04)22840497, (04)22840498 | FAX: (04)22853869</li>
+             <li>MAIL: ce@dragon.nchu.edu.tw</li>
+             <li><a href="#top" style="color: #ffffff;">Back to top</a></li>
+         </ul>
+     </footer>
+ </body>
+ </html>

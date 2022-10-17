@@ -9,8 +9,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>國立中興大學資訊工程學系 | 首頁</title>
     <style>
+        /* 共用 CSS */
+        body {
+            padding: 0 10%;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: #3c6585;
+        }
+
+        footer {
+            padding: 20px 0; background-color: #38444d; color: #ffffff;
+        }
+
         .nav {
-            background-color: #38444d; 
+            background-color: #3c6585; 
             display: flex; 
             justify-content: space-between; 
             flex-wrap: wrap;
@@ -36,7 +49,7 @@
         }
         
         .nav li a:hover, .nav .dropdown:hover .dropbtn {
-          background-color: #009999;
+          background-color: #2e8692;
         }
         
         .nav li.dropdown {
@@ -48,7 +61,7 @@
           position: absolute;
           background-color: #f9f9f9;
           min-width: 160px;
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          box-shadow: 0px 8px 16px 0px #00000033;
           z-index: 1;
         }
         
@@ -61,15 +74,66 @@
         }
         
         .nav .dropdown-content a:hover {
-            background-color: #ccffff;
+            background-color: #2e869226;
         }
         
         .nav .dropdown:hover .dropdown-content {
             display: block;
         }
 
-        body {
-            padding: 0 10%;
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 99;
+            font-size: 20px;
+            border: none;
+            outline: none;
+            background-color: #2e8692;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            width: 50px;
+            height: 50px;
+        }
+
+        .content {
+            margin: 30px 0px;
+        }
+
+        .card:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .back-to-top:hover {
+            background-color: #3db0bf;
+        }
+
+        /* 個別 CSS */
+        .logo-container {
+            background-image: url("../img/background02.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .show {
+            margin: 20px 0;
+            padding: 5px;
+            background-color: #f2f2f2;
+        }
+
+        .news {
+            border: 1px solid #b9b9b9;
+            padding: 10px;
+            margin: 20px 0px;
+        }
+
+        .news span {
+            color: #00b300;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -77,6 +141,7 @@
     <div class="header" id="top">
         <div class="logo-container">
             <nav style="text-align: end;">
+                <a href="./css-demo.html">CSS展示</a> | 
                 <a href="./sitemap.html">網站地圖</a> | 
                 <a href="../en/index.html">English</a>
             </nav>
@@ -86,31 +151,32 @@
         </div>
         <div class="nav">
             <ul>
-                <li><a href="/ch/news.html">系所公告</a></li>
-                <li><a href="/ch/intro.html">系所介紹</a></li>
+                <li><a href="./news.html">系所公告</a></li>
+                <li><a href="./intro.html">系所介紹</a></li>
                 <li class="dropdown">
                   <a href="javascript:void(0)" class="dropbtn">課程資訊</a>
                   <div class="dropdown-content">
-                    <a href="/ch/course/bachelor.html">學士班</a>
-                    <a href="/ch/course/master.html">碩士班</a>
-                    <a href="/ch/course/phd.html">博士班</a>
+                    <a href="./course/bachelor.html">學士班</a>
+                    <a href="./course/master.html">碩士班</a>
+                    <a href="./course/master-in-work.html">碩士在職專班</a>
+                    <a href="./course/phd.html">博士班</a>
                   </div>
                 </li>
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn">系所成員</a>
                     <div class="dropdown-content">
-                    <a href="/ch/member/fulltime.html">專任師資</a>
-                    <a href="/ch/member/parttime.html">兼任師資</a>
-                    <a href="/ch/member/retire.html">退休師資</a>
-                    <a href="/ch/member/staff.html">行政人員</a>
+                    <a href="./member/faculty.html">現任師資</a>
+                    <a href="./member/retire.html">退休師資</a>
+                    <a href="./member/staff.html">行政人員</a>
                     </div>
                 </li>
-                <li><a href="/ch/lab.html">實驗室</a></li>
+                <li><a href="./lab.html">實驗室</a></li>
+                <li><a href="./contact.html">聯絡我們</a></li>
             </ul>
         </div>
     </div>
     <div class="content">
-        <div class="show" style="margin: 20px 0; border: 1px solid #707070;">
+        <div class="show">
             <img src="../img/main.jpg" alt="main" style="width: 100%;">
             恭賀本系范耀中副教授榮獲國立中興大學110年度產學績優教師II殊榮！
         </div>
@@ -128,33 +194,37 @@
             <div style="width: 50%;">
                 <h2>最新公告</h2>
                 <div class="news-list">
-                    <div class="news" style="border: 1px solid #b9b9b9; padding: 10px; margin: 10px 0px;">
-                        <span style="color: rgb(0, 179, 0); font-weight: bold;">2022-09-21 18:39:48</span>
+                    <div class="news card">
+                        <span>2022-09-21 18:39:48</span>
                         <p>111年9月26日(一)UC Davis 3+X 碩士學位項目說明會</p>
-                        <a href="" style="color: #3268df;">更多資訊...</a>
+                        <a href="">更多資訊...</a>
                     </div>
-                    <div class="news" style="border: 1px solid #b9b9b9; padding: 10px; margin: 10px 0px;">
-                        <span style="color: rgb(0, 179, 0); font-weight: bold;">2022-09-05 17:07:29</span>
+                    <div class="news card">
+                        <span>2022-09-05 17:07:29</span>
                         <p>111學年度碩士班第32梯次遞補公告(甲組遞補)</p>
-                        <a href="" style="color: #3268df;">更多資訊...</a>
+                        <a href="">更多資訊...</a>
                     </div>
-                    <div class="news" style="border: 1px solid #b9b9b9; padding: 10px; margin: 10px 0px;">
-                        <span style="color: rgb(0, 179, 0); font-weight: bold;">2022-09-02 16:15:09</span>
+                    <div class="news card">
+                        <span>2022-09-02 16:15:09</span>
                         <p>111學年度碩士班第31梯次遞補公告(甲組遞補)</p>
-                        <a href="" style="color: #3268df;">更多資訊...</a>
+                        <a href="">更多資訊...</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <footer style="padding: 20px 0; background-color: #38444d; color: #ffffff;">
+    <footer>
         <ul>
             <li>國立中興大學資訊工程學系</li>
             <li>402 台中市南區興大路 145 號 - 理學大樓 8 樓</li>
             <li>TEL: (04)22840497, (04)22840498 | FAX: (04)22853869</li>
             <li>MAIL: ce@dragon.nchu.edu.tw</li>
-            <li><a href="#top" style="color: #ffffff;">回到頂端</a></li>
         </ul>
     </footer>
+    <a href="#top" class="back-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+            <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+        </svg>
+    </a>
 </body>
 </html>

@@ -1,0 +1,100 @@
+<!-- 
+4108056005 江尚軒 第一次作業 9/29
+4108056005 Shang-Hsuan Chiang The First Homework 9/29
+ -->
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>國立中興大學資訊工程學系 | 聯絡我們</title>
+</head>
+<body>
+    <div class="header" id="top">
+        <div style="text-align: center;">
+            <a href="./index.html">
+                <img src="../img/logo.png" alt="logo" style="width: 50%;">
+            </a>
+        </div>
+    </div>
+    <div class="container" style="width: 80%; margin: 20px auto; display: flex;">
+        <nav class="sidebar" style="width: 20%; background-color: #dddddd; margin: 0px 10px;">
+            <ul>
+                <li><a href="./news.html">系所公告</a></li>
+                <li><a href="./intro.html">系所介紹</a></li>
+                <li>課程資訊
+                    <ul>
+                        <li><a href="./course/bachelor.html">學士班</a></li>
+                        <li><a href="./course/master.html">碩士班</a></li>
+                        <li><a href="./course/phd.html">博士班</a></li>
+                    </ul>
+                </li>
+                <li>系所成員
+                    <ul>
+                        <li><a href="./member/faculty.html">現任師資</a></li>
+                        <li><a href="./member/retire.html">退休師資</a></li>
+                        <li><a href="./member/staff.html">行政人員</a></li>
+                    </ul>
+                </li>
+                <li><a href="./contact.html">聯絡我們</a></li>
+                <li><a href="./sitemap.html">網站地圖</a></li>
+                <li><a href="../en/contact.html">English</a></li>
+            </ul>
+        </nav>
+        <div class="content" style="width: 80%; margin: 0px 10px;">
+            <h1 style="text-align: center;">聯絡我們</h1>
+            <hr>
+            <p>請填寫以下表單並送出，謝謝！</p>
+            <form action="" method="GET">
+                <p><label for="name">姓名：</label><input id="name" type="text" size="20" max="10"></p>
+                <p><label for="gender">姓別：</label><input type="radio" id="male" name="gender" value="male"><label for="male">男</label><input type="radio" id="female" name="gender" value="female"><label for="female">女</label><br></p>
+                <p><label for="age">年齡：</label><input type="number" name="age" id="age" max="100" min="1"></p>
+                <p><label for="birthday">生日：</label><input type="date" name="birthday" id="birthday"></p>
+                <p><label for="phone">連絡電話：</label><input type="tel" name="phone" id="phone"></p>
+                <p><label for="email">電子信箱：</label><input type="email" name="email" id="email"></p>
+                <p>
+                    <label for="location">居住城市：</label>
+                    <input type="text" id="location" placeholder="輸入城市名稱" list="citys">
+                    <datalist id="citys">
+                        <option value="台北">
+                        <option value="台中">
+                        <option value="台南">
+                        <option value="台東">
+                    </datalist>
+                </p>
+                <p>
+                    <label for="degree">學歷：</label>
+                    <select name="degree" id="cars">
+                        <option value="1">學士</option>
+                        <option value="2">碩士</option>
+                        <option value="3">博士</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="interest">興趣 (可複選)：</label>
+                    <input type="checkbox" name="interest" id="1"><label for="1">寫程式</label>
+                    <input type="checkbox" name="interest" id="2"><label for="2">玩遊戲</label>
+                    <input type="checkbox" name="interest" id="3"><label for="3">運動</label>
+                    <input type="checkbox" name="interest" id="4"><label for="4">吃東西</label>
+                    <input type="checkbox" name="interest" id="5"><label for="5">讀書</label>
+                </p>
+                <p>
+                    <label for="content">備註：</label><br>
+                    <textarea name="content" id="content" cols="30" rows="10" placeholder="寫點什麼吧！"></textarea>
+                </p>
+                <p><input type="reset" value="清空" style="margin-right: 10px;"><input type="submit" value="送出"></p>
+            </form>
+            <!-- TODO -->
+        </div>
+    </div>
+    <footer style="padding: 20px 0; background-color: #38444d; color: rgb(255, 255, 255);">
+        <ul>
+            <li>國立中興大學資訊工程學系</li>
+            <li>402 台中市南區興大路 145 號 - 理學大樓 8 樓</li>
+            <li>TEL: (04)22840497, (04)22840498 | FAX: (04)22853869</li>
+            <li>MAIL: ce@dragon.nchu.edu.tw</li>
+            <li><a href="#top" style="color: #ffffff;">回到頂端</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

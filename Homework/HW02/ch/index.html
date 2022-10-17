@@ -1,0 +1,160 @@
+<!-- 
+4108056005 江尚軒 第一次作業 9/29
+4108056005 Shang-Hsuan Chiang The First Homework 9/29
+ -->
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>國立中興大學資訊工程學系 | 首頁</title>
+    <style>
+        .nav {
+            background-color: #38444d; 
+            display: flex; 
+            justify-content: space-between; 
+            flex-wrap: wrap;
+        }
+
+        .nav ul {
+            list-style-type: none; 
+            margin: 0; 
+            padding: 0; 
+            overflow: hidden;
+        }
+        
+        .nav ul li {
+            float: left;
+        }
+
+        .nav li a, .dropbtn {
+          display: inline-block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        .nav li a:hover, .nav .dropdown:hover .dropbtn {
+          background-color: #009999;
+        }
+        
+        .nav li.dropdown {
+          display: inline-block;
+        }
+        
+        .nav .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .nav .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+        
+        .nav .dropdown-content a:hover {
+            background-color: #ccffff;
+        }
+        
+        .nav .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        body {
+            padding: 0 10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header" id="top">
+        <div class="logo-container">
+            <nav style="text-align: end;">
+                <a href="./sitemap.html">網站地圖</a> | 
+                <a href="../en/index.html">English</a>
+            </nav>
+            <a href="./index.html">
+                <img src="../img/logo.png" alt="logo" style="width: 50%;">
+            </a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="/ch/news.html">系所公告</a></li>
+                <li><a href="/ch/intro.html">系所介紹</a></li>
+                <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">課程資訊</a>
+                  <div class="dropdown-content">
+                    <a href="/ch/course/bachelor.html">學士班</a>
+                    <a href="/ch/course/master.html">碩士班</a>
+                    <a href="/ch/course/phd.html">博士班</a>
+                  </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">系所成員</a>
+                    <div class="dropdown-content">
+                    <a href="/ch/member/fulltime.html">專任師資</a>
+                    <a href="/ch/member/parttime.html">兼任師資</a>
+                    <a href="/ch/member/retire.html">退休師資</a>
+                    <a href="/ch/member/staff.html">行政人員</a>
+                    </div>
+                </li>
+                <li><a href="/ch/lab.html">實驗室</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="show" style="margin: 20px 0; border: 1px solid #707070;">
+            <img src="../img/main.jpg" alt="main" style="width: 100%;">
+            恭賀本系范耀中副教授榮獲國立中興大學110年度產學績優教師II殊榮！
+        </div>
+        <div class="row" style="display: flex;">
+            <div style="width: 50%;">
+                <h2>重要連結</h2>
+                <ul>
+                    <li><a href="">高中生專區</a></li>
+                    <li><a href="">碩士在職專班專區</a></li>
+                    <li><a href="">博士班專區</a></li>
+                    <li><a href="">資工系友園地</a></li>
+                    <li><a href="">教室使用情況</a></li>
+                </ul>
+            </div>
+            <div style="width: 50%;">
+                <h2>最新公告</h2>
+                <div class="news-list">
+                    <div class="news" style="border: 1px solid #b9b9b9; padding: 10px; margin: 10px 0px;">
+                        <span style="color: rgb(0, 179, 0); font-weight: bold;">2022-09-21 18:39:48</span>
+                        <p>111年9月26日(一)UC Davis 3+X 碩士學位項目說明會</p>
+                        <a href="" style="color: #3268df;">更多資訊...</a>
+                    </div>
+                    <div class="news" style="border: 1px solid #b9b9b9; padding: 10px; margin: 10px 0px;">
+                        <span style="color: rgb(0, 179, 0); font-weight: bold;">2022-09-05 17:07:29</span>
+                        <p>111學年度碩士班第32梯次遞補公告(甲組遞補)</p>
+                        <a href="" style="color: #3268df;">更多資訊...</a>
+                    </div>
+                    <div class="news" style="border: 1px solid #b9b9b9; padding: 10px; margin: 10px 0px;">
+                        <span style="color: rgb(0, 179, 0); font-weight: bold;">2022-09-02 16:15:09</span>
+                        <p>111學年度碩士班第31梯次遞補公告(甲組遞補)</p>
+                        <a href="" style="color: #3268df;">更多資訊...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer style="padding: 20px 0; background-color: #38444d; color: #ffffff;">
+        <ul>
+            <li>國立中興大學資訊工程學系</li>
+            <li>402 台中市南區興大路 145 號 - 理學大樓 8 樓</li>
+            <li>TEL: (04)22840497, (04)22840498 | FAX: (04)22853869</li>
+            <li>MAIL: ce@dragon.nchu.edu.tw</li>
+            <li><a href="#top" style="color: #ffffff;">回到頂端</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

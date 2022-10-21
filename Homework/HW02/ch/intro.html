@@ -106,7 +106,7 @@
             background-color: #2e8692;
             color: white;
             cursor: pointer;
-            border-radius: 4px;
+            border-radius: 50%;
             display: flex;
             justify-content: center; 
             align-items: center;
@@ -116,6 +116,11 @@
 
         .back-to-top:hover {
             background-color: #3db0bf;
+        }
+
+        /* 個別 CSS */
+        section {
+            font-weight: bold;
         }
     </style>
 </head>
@@ -169,13 +174,13 @@
             </ul>
             <p>本系課程之規劃與設計以落實學生核心能力為基礎，並秉持「理論與應用」並重，「深度與廣度」相輔之精神，以期奠定學生在資訊領域的理論基礎與實務能力，進而提升並擴展學生在資訊技術上的深度與廣度，最終為促進中部地區以及國家資訊相關產業的發展。</p>
             <p>推動「知識經濟」已成為未來經濟發展的重要方向，而高素質的資訊人才尤為知識經濟中不可或缺的一環。本系身為中部唯一頂尖大學的資訊系所，以培養國家尖端資訊產業人才為職志。基於這樣的理念，本系訂定以下教育目標，並基於教育目標，根據不同學制，訂定學生應具備的核心能力：</p>
-            <section style="font-weight:bold;">本系教育目標</section>
+            <section>本系教育目標</section>
             <ol>
                 <li>培養具備資訊理論、硬體、軟體、網路多媒體與資訊應用專長之資訊人才。</li>
                 <li>培養具備理論基礎與實作能力的資訊人才。</li>
                 <li>培養具備自我挑戰與終身學習能力之人才。</li>
             </ol>
-            <section style="font-weight:bold;">大學部學生核心能力</section>
+            <section>大學部學生核心能力</section>
             <ol>
                 <li>具備資訊科學素養、資訊理論與數學分析之能力。</li>
                 <li>具備分析、設計與實作資訊硬體系統之能力。</li>
@@ -184,7 +189,7 @@
                 <li>具備分析、設計與實作資訊網路與多媒體系統之能力。</li>
                 <li>具備自我學習、溝通協調與團隊合作之能力。</li>
             </ol>
-            <section style="font-weight:bold;">碩士班學生核心能力</section>
+            <section>碩士班學生核心能力</section>
             <ol>
                 <li>具備資訊科學素養、資訊理論與數學分析之能力。</li>
                 <li>具備分析、設計與實作資訊硬體系統之能力。</li>
@@ -195,7 +200,7 @@
                 <li>具備資料蒐集、獨立思考、解決問題及研究創新之能力。</li>
                 <li>尊重學術倫理並具備學術論文的簡報與撰寫能力。</li>
             </ol>
-            <section style="font-weight:bold;">博士班學生核心能力</section>
+            <section>博士班學生核心能力</section>
             <ol>
                 <li>具備資訊科學素養、資訊理論與數學分析之能力。</li>
                 <li>具備分析、設計與實作資訊硬體系統之能力。</li>
@@ -207,7 +212,7 @@
                 <li>尊重學術倫理並具備學術論文的簡報與撰寫能力。</li>
             </ol>
             <details>
-                <summary style="font-weight:bold;">學生畢業出路</summary>
+                <summary>學生畢業出路</summary>
                 <figure>
                     <img src="../img/graduate.png" alt="畢業出路">
                     <figcaption>圖1. 本系畢業滿1年畢業生</figcaption>
@@ -218,13 +223,17 @@
             </aside>
         </article>
     </div>
-    <footer style="padding: 20px 0; background-color: #38444d; color: rgb(255, 255, 255);">
+    <a href="#top" class="back-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+            <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+        </svg>
+    </a>
+    <footer>
         <ul>
             <li>國立中興大學資訊工程學系</li>
             <li>402 台中市南區興大路 145 號 - 理學大樓 8 樓</li>
             <li>TEL: (04)22840497, (04)22840498 | FAX: (04)22853869</li>
             <li>MAIL: ce@dragon.nchu.edu.tw</li>
-            <li><a href="#top" style="color: #ffffff;">回到頂端</a></li>
         </ul>
     </footer>
 </body>

@@ -23,7 +23,7 @@
         }
 
         .logo-container {
-            background-image: url("../img/background02.jpg");
+            background-image: url("../../img/background02.jpg");
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -106,7 +106,7 @@
             background-color: #2e8692;
             color: white;
             cursor: pointer;
-            border-radius: 4px;
+            border-radius: 50%;
             display: flex;
             justify-content: center; 
             align-items: center;
@@ -117,6 +117,8 @@
         .back-to-top:hover {
             background-color: #3db0bf;
         }
+
+        /* 個別 CSS */
     </style>
 </head>
 <body>
@@ -201,13 +203,17 @@
         </form>
         <!-- TODO -->
     </div>
+    <a href="#top" class="back-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+            <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+        </svg>
+    </a>
     <footer style="padding: 20px 0; background-color: #38444d; color: rgb(255, 255, 255);">
         <ul>
             <li>國立中興大學資訊工程學系</li>
             <li>402 台中市南區興大路 145 號 - 理學大樓 8 樓</li>
             <li>TEL: (04)22840497, (04)22840498 | FAX: (04)22853869</li>
             <li>MAIL: ce@dragon.nchu.edu.tw</li>
-            <li><a href="#top" style="color: #ffffff;">回到頂端</a></li>
         </ul>
     </footer>
 </body>

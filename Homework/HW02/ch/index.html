@@ -1,6 +1,6 @@
 <!-- 
-4108056005 江尚軒 第一次作業 9/29
-4108056005 Shang-Hsuan Chiang The First Homework 9/29
+4108056005 江尚軒 第二次作業 10/20
+4108056005 Shang-Hsuan Chiang The Second Homework 10/20
  -->
 <!DOCTYPE html>
 <html lang="zh-Hant">
@@ -8,6 +8,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>國立中興大學資訊工程學系 | 首頁</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
     <style>
         /* 共用 CSS */
         body {
@@ -18,8 +21,14 @@
             color: #3c6585;
         }
 
-        footer {
-            padding: 20px 0; background-color: #38444d; color: #ffffff;
+        hr {
+            border-top: #3c6585 1px solid;
+        }
+
+        .logo-container {
+            background-image: url("../img/background02.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         .nav {
@@ -81,6 +90,14 @@
             display: block;
         }
 
+        .content {
+            margin: 30px 0px;
+        }
+
+        footer {
+            padding: 20px 0; background-color: #38444d; color: #ffffff;
+        }
+
         .back-to-top {
             position: fixed;
             bottom: 30px;
@@ -100,29 +117,15 @@
             height: 50px;
         }
 
-        .content {
-            margin: 30px 0px;
-        }
-
-        .card:hover {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-
         .back-to-top:hover {
             background-color: #3db0bf;
         }
 
         /* 個別 CSS */
-        .logo-container {
-            background-image: url("../img/background02.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
         .show {
             margin: 20px 0;
             padding: 5px;
-            background-color: #f2f2f2;
+            background-color: #e0e0e0;
         }
 
         .news {
@@ -135,13 +138,47 @@
             color: #00b300;
             font-weight: bold;
         }
+
+        .card:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .img-box {
+            width: 100%;
+            height: 100%;
+            overflow:hidden;
+        }
+
+        .img-box img {
+            width: 100%;
+            transform: scale(1,1);
+            transition: all 1s ease-out;
+        }
+
+        .img-box img:hover {
+            transform: scale(1.2,1.2);
+        }
+
+        .welcome {
+            text-align: center;
+            color: red;
+            animation-name: animation01;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            font-family: 'Noto Serif TC', serif;
+        }
+
+        @keyframes animation01 {
+            0%   {color: red;}
+            33%  {color: green;}
+            66%  {color: blue;}
+        }
     </style>
 </head>
 <body>
     <div class="header" id="top">
         <div class="logo-container">
             <nav style="text-align: end;">
-                <a href="./css-demo.html">CSS展示</a> | 
                 <a href="./sitemap.html">網站地圖</a> | 
                 <a href="../en/index.html">English</a>
             </nav>
@@ -176,8 +213,11 @@
         </div>
     </div>
     <div class="content">
+        <h1 class="welcome">歡迎來到中興大學資訊工程學系!</h1>
         <div class="show">
-            <img src="../img/main.jpg" alt="main" style="width: 100%;">
+            <div class="img-box">
+                <img src="../img/main.jpg" alt="show img">
+            </div>
             恭賀本系范耀中副教授榮獲國立中興大學110年度產學績優教師II殊榮！
         </div>
         <div class="row" style="display: flex;">

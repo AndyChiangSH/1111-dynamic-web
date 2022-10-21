@@ -1,6 +1,6 @@
 <!-- 
-4108056005 江尚軒 第一次作業 9/29
-4108056005 Shang-Hsuan Chiang The First Homework 9/29
+4108056005 江尚軒 第二次作業 10/20
+4108056005 Shang-Hsuan Chiang The Second Homework 10/20
  -->
 <!DOCTYPE html>
 <html lang="zh-Hant">
@@ -8,101 +8,215 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>國立中興大學資訊工程學系 | 系所介紹</title>
+    <style>
+        /* 共用 CSS */
+        body {
+            padding: 0 10%;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: #3c6585;
+        }
+
+        hr {
+            border-top: #3c6585 1px solid;
+        }
+
+        .logo-container {
+            background-image: url("../img/background02.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .nav {
+            background-color: #3c6585; 
+            display: flex; 
+            justify-content: space-between; 
+            flex-wrap: wrap;
+        }
+
+        .nav ul {
+            list-style-type: none; 
+            margin: 0; 
+            padding: 0; 
+            overflow: hidden;
+        }
+        
+        .nav ul li {
+            float: left;
+        }
+
+        .nav li a, .dropbtn {
+          display: inline-block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        .nav li a:hover, .nav .dropdown:hover .dropbtn {
+          background-color: #2e8692;
+        }
+        
+        .nav li.dropdown {
+          display: inline-block;
+        }
+        
+        .nav .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px #00000033;
+          z-index: 1;
+        }
+        
+        .nav .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+        
+        .nav .dropdown-content a:hover {
+            background-color: #2e869226;
+        }
+        
+        .nav .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .content {
+            margin: 30px 0px;
+        }
+
+        footer {
+            padding: 20px 0; background-color: #38444d; color: #ffffff;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 99;
+            font-size: 20px;
+            border: none;
+            outline: none;
+            background-color: #2e8692;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            width: 50px;
+            height: 50px;
+        }
+
+        .back-to-top:hover {
+            background-color: #3db0bf;
+        }
+    </style>
 </head>
 <body>
     <div class="header" id="top">
-        <div style="text-align: center;">
+        <div class="logo-container">
+            <nav style="text-align: end;">
+                <a href="./sitemap.html">網站地圖</a> | 
+                <a href="../en/index.html">English</a>
+            </nav>
             <a href="./index.html">
                 <img src="../img/logo.png" alt="logo" style="width: 50%;">
             </a>
         </div>
-    </div>
-    <div class="container" style="width: 80%; margin: 20px auto; display: flex;">
-        <nav class="sidebar" style="width: 20%; background-color: #dddddd; margin: 0px 10px;">
+        <div class="nav">
             <ul>
                 <li><a href="./news.html">系所公告</a></li>
                 <li><a href="./intro.html">系所介紹</a></li>
-                <li>課程資訊
-                    <ul>
-                        <li><a href="./course/bachelor.html">學士班</a></li>
-                        <li><a href="./course/master.html">碩士班</a></li>
-                        <li><a href="./course/phd.html">博士班</a></li>
-                    </ul>
+                <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">課程資訊</a>
+                  <div class="dropdown-content">
+                    <a href="./course/bachelor.html">學士班</a>
+                    <a href="./course/master.html">碩士班</a>
+                    <a href="./course/master-in-work.html">碩士在職專班</a>
+                    <a href="./course/phd.html">博士班</a>
+                  </div>
                 </li>
-                <li>系所成員
-                    <ul>
-                        <li><a href="./member/faculty.html">現任師資</a></li>
-                        <li><a href="./member/retire.html">退休師資</a></li>
-                        <li><a href="./member/staff.html">行政人員</a></li>
-                    </ul>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">系所成員</a>
+                    <div class="dropdown-content">
+                    <a href="./member/faculty.html">現任師資</a>
+                    <a href="./member/retire.html">退休師資</a>
+                    <a href="./member/staff.html">行政人員</a>
+                    </div>
                 </li>
+                <li><a href="./lab.html">實驗室</a></li>
                 <li><a href="./contact.html">聯絡我們</a></li>
-                <li><a href="./sitemap.html">網站地圖</a></li>
-                <li><a href="../en/intro.html">English</a></li>
             </ul>
-        </nav>
-        <div class="content" style="width: 80%; margin: 0px 10px;">
-            <h1 style="text-align: center;">系所介紹</h1>
-            <hr>
-            <article>
-                <p>資訊科技產業為我國最重要的產業之一，本系身為中部唯一頂尖大學的資訊系所，當以培養國家尖端資訊產業人才為職志。為培養具備資訊理論、硬體、軟體、網路多媒體與資訊應用之全方位資訊人才，本系課程規劃以下列五大領域為重點特色：<span style="font-weight:bold; color:red;">網路多媒體、嵌入式系統、智慧型系統、物聯網與雲端運算以及資訊安全</span>，並具備以下辦學特色：</p>
-                <ol>
-                    <li>課程規劃強調理論與實務課程並重，例如：「邏輯設計」、「作業系統」、「電子電路學」搭配開設「邏輯設計實驗」、「作業系統實驗」以及、「電子電路實驗」；並且將「資訊專題」列為必修課程，以培養具備理論基礎與實作能力的資訊人才。</li>
-                    <li>訓練學生程式能力：首先，本系基礎程式設計課程分為大一上下兩學期：上學期為「計算機程式設計」，下學期則為「物件導向程式設計」，以一學年的時間培養學生基本程式能力；其次，每位老師在課程中都會安排程式相關的作業，強化學生程式能力；另外，本系在大二、大三、大四等年級也開設多門程式設計課程，如組合語言與系統程式、視窗環境程式設計、Unix 系統與 Script 程式設計、網路程式設計、智慧型手機應用程式開發等。本系亦鼓勵學生參與相關程式設計競賽、大學程式能力檢定 (CPE) 等，進一步提升程式能力。本系也邀請上海復旦大學吳永輝教授，於寒暑假期間蒞臨本系培訓學生程式設計能力。</li>
-                    <li>因應雲端產業的趨勢，本系與應數系於研究所合作開設「雲端計算與服務學程」，讓本系能在 2011 年起就開始培育雲端運算與巨量資料分析方面的人才，參加全國性競賽，獲得許多獎項，成績斐然。</li>
-                    <li>本系要求教師的教學科目與個人學術研究與實務經驗領域相結合。因此，在課程開授上，皆依據老師的專長開授相關課程。同時，各位教師也會將其在研究成果與實務經驗上的最新知識與成果應用在教學上，提升學生學習上的樂趣與效果。</li>
-                </ol>
-                <p>本系課程之規劃與設計以落實學生核心能力為基礎，並秉持「理論與應用」並重，「深度與廣度」相輔之精神，以期奠定學生在資訊領域的理論基礎與實務能力，進而提升並擴展學生在資訊技術上的深度與廣度，最終為促進中部地區以及國家資訊相關產業的發展。</p>
-                <p>推動「知識經濟」已成為未來經濟發展的重要方向，而高素質的資訊人才尤為知識經濟中不可或缺的一環。本系身為中部唯一頂尖大學的資訊系所，以培養國家尖端資訊產業人才為職志。基於這樣的理念，本系訂定以下教育目標，並基於教育目標，根據不同學制，訂定學生應具備的核心能力：</p>
-                <section style="font-weight:bold;">本系教育目標</section>
-                <ol>
-                    <li>培養具備資訊理論、硬體、軟體、網路多媒體與資訊應用專長之資訊人才。</li>
-                    <li>培養具備理論基礎與實作能力的資訊人才。</li>
-                    <li>培養具備自我挑戰與終身學習能力之人才。</li>
-                </ol>
-                <section style="font-weight:bold;">大學部學生核心能力</section>
-                <ol>
-                    <li>具備資訊科學素養、資訊理論與數學分析之能力。</li>
-                    <li>具備分析、設計與實作資訊硬體系統之能力。</li>
-                    <li>具備分析、設計與實作資訊軟體系統之能力。</li>
-                    <li>具備分析、設計與整合資訊應用系統之能力。</li>
-                    <li>具備分析、設計與實作資訊網路與多媒體系統之能力。</li>
-                    <li>具備自我學習、溝通協調與團隊合作之能力。</li>
-                </ol>
-                <section style="font-weight:bold;">碩士班學生核心能力</section>
-                <ol>
-                    <li>具備資訊科學素養、資訊理論與數學分析之能力。</li>
-                    <li>具備分析、設計與實作資訊硬體系統之能力。</li>
-                    <li>具備分析、設計與實作資訊軟體系統之能力。</li>
-                    <li>具備分析、設計與整合資訊應用系統之能力。</li>
-                    <li>具備分析、設計與實作資訊網路與多媒體系統之能力。</li>
-                    <li>具備自我學習、溝通協調與團隊合作之能力。</li>
-                    <li>具備資料蒐集、獨立思考、解決問題及研究創新之能力。</li>
-                    <li>尊重學術倫理並具備學術論文的簡報與撰寫能力。</li>
-                </ol>
-                <section style="font-weight:bold;">博士班學生核心能力</section>
-                <ol>
-                    <li>具備資訊科學素養、資訊理論與數學分析之能力。</li>
-                    <li>具備分析、設計與實作資訊硬體系統之能力。</li>
-                    <li>具備分析、設計與實作資訊軟體系統之能力。</li>
-                    <li>具備分析、設計與整合資訊應用系統之能力。</li>
-                    <li>具備分析、設計與實作資訊網路與多媒體系統之能力。</li>
-                    <li>具備自我學習、溝通協調與團隊合作之能力。</li>
-                    <li>具備資料蒐集、獨立思考、解決問題及研究創新之能力。</li>
-                    <li>尊重學術倫理並具備學術論文的簡報與撰寫能力。</li>
-                </ol>
-                <details>
-                    <summary style="font-weight:bold;">學生畢業出路</summary>
-                    <figure>
-                        <img src="../img/graduate.png" alt="畢業出路">
-                        <figcaption>圖1. 本系畢業滿1年畢業生</figcaption>
-                    </figure>
-                </details>
-                <aside>
-                    <p style="color: blue;">補充：原名為資訊科學與工程學系</p>
-                </aside>
-            </article>
         </div>
+    </div>
+    <div class="content">
+        <h1 style="text-align: center;">系所介紹</h1>
+        <hr>
+        <article>
+            <p>資訊科技產業為我國最重要的產業之一，本系身為中部唯一頂尖大學的資訊系所，當以培養國家尖端資訊產業人才為職志。為培養具備資訊理論、硬體、軟體、網路多媒體與資訊應用之全方位資訊人才，本系課程規劃以下列五大領域為重點特色：<span style="font-weight:bold; color:red;">網路多媒體、嵌入式系統、智慧型系統、物聯網與雲端運算以及資訊安全</span>，並具備以下辦學特色：</p>
+            <ul>
+                <li>課程規劃強調理論與實務課程並重，例如：「邏輯設計」、「作業系統」、「電子電路學」搭配開設「邏輯設計實驗」、「作業系統實驗」以及、「電子電路實驗」；並且將「資訊專題」列為必修課程，以培養具備理論基礎與實作能力的資訊人才。</li>
+                <li>訓練學生程式能力：首先，本系基礎程式設計課程分為大一上下兩學期：上學期為「計算機程式設計」，下學期則為「物件導向程式設計」，以一學年的時間培養學生基本程式能力；其次，每位老師在課程中都會安排程式相關的作業，強化學生程式能力；另外，本系在大二、大三、大四等年級也開設多門程式設計課程，如組合語言與系統程式、視窗環境程式設計、Unix 系統與 Script 程式設計、網路程式設計、智慧型手機應用程式開發等。本系亦鼓勵學生參與相關程式設計競賽、大學程式能力檢定 (CPE) 等，進一步提升程式能力。本系也邀請上海復旦大學吳永輝教授，於寒暑假期間蒞臨本系培訓學生程式設計能力。</li>
+                <li>因應雲端產業的趨勢，本系與應數系於研究所合作開設「雲端計算與服務學程」，讓本系能在 2011 年起就開始培育雲端運算與巨量資料分析方面的人才，參加全國性競賽，獲得許多獎項，成績斐然。</li>
+                <li>本系要求教師的教學科目與個人學術研究與實務經驗領域相結合。因此，在課程開授上，皆依據老師的專長開授相關課程。同時，各位教師也會將其在研究成果與實務經驗上的最新知識與成果應用在教學上，提升學生學習上的樂趣與效果。</li>
+            </ul>
+            <p>本系課程之規劃與設計以落實學生核心能力為基礎，並秉持「理論與應用」並重，「深度與廣度」相輔之精神，以期奠定學生在資訊領域的理論基礎與實務能力，進而提升並擴展學生在資訊技術上的深度與廣度，最終為促進中部地區以及國家資訊相關產業的發展。</p>
+            <p>推動「知識經濟」已成為未來經濟發展的重要方向，而高素質的資訊人才尤為知識經濟中不可或缺的一環。本系身為中部唯一頂尖大學的資訊系所，以培養國家尖端資訊產業人才為職志。基於這樣的理念，本系訂定以下教育目標，並基於教育目標，根據不同學制，訂定學生應具備的核心能力：</p>
+            <section style="font-weight:bold;">本系教育目標</section>
+            <ol>
+                <li>培養具備資訊理論、硬體、軟體、網路多媒體與資訊應用專長之資訊人才。</li>
+                <li>培養具備理論基礎與實作能力的資訊人才。</li>
+                <li>培養具備自我挑戰與終身學習能力之人才。</li>
+            </ol>
+            <section style="font-weight:bold;">大學部學生核心能力</section>
+            <ol>
+                <li>具備資訊科學素養、資訊理論與數學分析之能力。</li>
+                <li>具備分析、設計與實作資訊硬體系統之能力。</li>
+                <li>具備分析、設計與實作資訊軟體系統之能力。</li>
+                <li>具備分析、設計與整合資訊應用系統之能力。</li>
+                <li>具備分析、設計與實作資訊網路與多媒體系統之能力。</li>
+                <li>具備自我學習、溝通協調與團隊合作之能力。</li>
+            </ol>
+            <section style="font-weight:bold;">碩士班學生核心能力</section>
+            <ol>
+                <li>具備資訊科學素養、資訊理論與數學分析之能力。</li>
+                <li>具備分析、設計與實作資訊硬體系統之能力。</li>
+                <li>具備分析、設計與實作資訊軟體系統之能力。</li>
+                <li>具備分析、設計與整合資訊應用系統之能力。</li>
+                <li>具備分析、設計與實作資訊網路與多媒體系統之能力。</li>
+                <li>具備自我學習、溝通協調與團隊合作之能力。</li>
+                <li>具備資料蒐集、獨立思考、解決問題及研究創新之能力。</li>
+                <li>尊重學術倫理並具備學術論文的簡報與撰寫能力。</li>
+            </ol>
+            <section style="font-weight:bold;">博士班學生核心能力</section>
+            <ol>
+                <li>具備資訊科學素養、資訊理論與數學分析之能力。</li>
+                <li>具備分析、設計與實作資訊硬體系統之能力。</li>
+                <li>具備分析、設計與實作資訊軟體系統之能力。</li>
+                <li>具備分析、設計與整合資訊應用系統之能力。</li>
+                <li>具備分析、設計與實作資訊網路與多媒體系統之能力。</li>
+                <li>具備自我學習、溝通協調與團隊合作之能力。</li>
+                <li>具備資料蒐集、獨立思考、解決問題及研究創新之能力。</li>
+                <li>尊重學術倫理並具備學術論文的簡報與撰寫能力。</li>
+            </ol>
+            <details>
+                <summary style="font-weight:bold;">學生畢業出路</summary>
+                <figure>
+                    <img src="../img/graduate.png" alt="畢業出路">
+                    <figcaption>圖1. 本系畢業滿1年畢業生</figcaption>
+                </figure>
+            </details>
+            <aside>
+                <p style="color: blue;">補充：原名為資訊科學與工程學系</p>
+            </aside>
+        </article>
     </div>
     <footer style="padding: 20px 0; background-color: #38444d; color: rgb(255, 255, 255);">
         <ul>
